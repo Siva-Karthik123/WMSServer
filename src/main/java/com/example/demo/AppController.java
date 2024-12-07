@@ -31,7 +31,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "https://workshopmanagement.vercel.app")
 public class AppController {
 	@Autowired
 	DAO dao;
