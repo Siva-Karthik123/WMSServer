@@ -184,7 +184,7 @@ public class AppController {
                 if (!uploadDir.exists()) uploadDir.mkdirs();
                 Path path = Paths.get(imagePath);
                 Files.write(path, imageFile.getBytes());
-                workshop.setImage("http://localhost:8081/uploads/" + imageFile.getOriginalFilename());
+                workshop.setImage("https://wmsserver-production.up.railway.app/uploads/" + imageFile.getOriginalFilename());
             } catch (IOException e) {
                 e.printStackTrace();
                 return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(null);
