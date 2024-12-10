@@ -36,7 +36,7 @@ public class AppController {
 	@Autowired
 	DAO dao;
 	
-	@GetMapping("/welcome")
+	@GetMapping("/")
 	public String fun1() {
 		return "Welcome";
 	}
